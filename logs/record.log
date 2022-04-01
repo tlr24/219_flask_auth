@@ -171,3 +171,5 @@
 2022-04-01 00:51:39,078 INFO werkzeug Thread-3 : 172.19.0.1 - - [01/Apr/2022 00:51:39] "GET /register HTTP/1.1" 200 -
 2022-04-01 00:53:03,388 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
 2022-04-01 00:53:03,564 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 00:59:51,423 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
+2022-04-01 00:59:51,608 INFO werkzeug MainThread :  * Restarting with stat
