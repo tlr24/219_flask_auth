@@ -132,3 +132,44 @@
 2022-03-31 01:58:34,370 INFO werkzeug MainThread :  * Restarting with stat
 2022-03-31 01:59:33,434 INFO werkzeug MainThread :  * Detected change in '/home/myuser/app/auth/forms/__init__.py', reloading
 2022-03-31 01:59:33,519 INFO werkzeug MainThread :  * Restarting with stat
+2022-03-31 02:29:44,317 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:29:44] "GET / HTTP/1.1" 200 -
+2022-03-31 02:29:44,468 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:29:44] "GET / HTTP/1.1" 200 -
+2022-03-31 02:29:45,696 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:29:45] "GET /login HTTP/1.1" 200 -
+2022-03-31 02:29:54,653 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:29:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+2022-03-31 02:29:54,683 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:29:54] "GET /dashboard HTTP/1.1" 200 -
+2022-03-31 02:34:01,472 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:34:01] "GET /about HTTP/1.1" 200 -
+2022-03-31 02:34:02,148 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:34:02] "GET /welcome HTTP/1.1" 200 -
+2022-03-31 02:34:09,029 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:34:09] "[32mGET /logout HTTP/1.1[0m" 302 -
+2022-03-31 02:34:09,042 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:34:09] "GET /login HTTP/1.1" 200 -
+2022-03-31 02:34:10,117 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:34:10] "GET /register HTTP/1.1" 200 -
+2022-03-31 02:34:18,478 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:34:18] "[32mPOST /register HTTP/1.1[0m" 302 -
+2022-03-31 02:34:18,490 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:34:18] "GET /login HTTP/1.1" 200 -
+2022-03-31 02:34:22,002 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:34:22] "GET /register HTTP/1.1" 200 -
+2022-03-31 02:34:49,371 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:34:49] "POST /register HTTP/1.1" 200 -
+2022-03-31 02:34:52,952 INFO werkzeug Thread-3 : 172.23.0.1 - - [31/Mar/2022 02:34:52] "GET /login HTTP/1.1" 200 -
+2022-04-01 00:27:38,109 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000 (Press CTRL+C to quit)
+2022-04-01 00:27:38,113 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 00:31:10,049 INFO werkzeug Thread-4 : 172.19.0.1 - - [01/Apr/2022 00:31:10] "GET / HTTP/1.1" 200 -
+2022-04-01 00:31:14,676 INFO werkzeug Thread-4 : 172.19.0.1 - - [01/Apr/2022 00:31:14] "GET / HTTP/1.1" 200 -
+2022-04-01 00:31:14,958 INFO werkzeug Thread-4 : 172.19.0.1 - - [01/Apr/2022 00:31:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-04-01 00:31:17,643 INFO werkzeug Thread-4 : 172.19.0.1 - - [01/Apr/2022 00:31:17] "GET /login HTTP/1.1" 200 -
+2022-04-01 00:31:27,953 INFO werkzeug Thread-4 : 172.19.0.1 - - [01/Apr/2022 00:31:27] "GET /register HTTP/1.1" 200 -
+2022-04-01 00:32:17,221 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
+2022-04-01 00:32:17,352 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 00:33:14,449 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000 (Press CTRL+C to quit)
+2022-04-01 00:33:14,452 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 00:33:39,528 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
+2022-04-01 00:33:39,710 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 00:49:44,145 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
+2022-04-01 00:49:44,254 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 00:51:39,078 INFO werkzeug Thread-3 : 172.19.0.1 - - [01/Apr/2022 00:51:39] "GET /register HTTP/1.1" 200 -
+2022-04-01 00:53:03,388 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
+2022-04-01 00:53:03,564 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 00:59:51,423 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
+2022-04-01 00:59:51,608 INFO werkzeug MainThread :  * Restarting with stat

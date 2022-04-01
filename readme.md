@@ -9,6 +9,8 @@
 
 * [Developmental Deployment](https://tlr24-is219-dev2.herokuapp.com/)
 
+### Project 2: The 10 unit tests are found in auth_test.py
+
 ## Setting up CI/CD
 
 The result of this will be that when you create a pull request to merge a branch to master, it will deploy to your

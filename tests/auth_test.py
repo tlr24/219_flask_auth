@@ -41,21 +41,20 @@ def test_successful_login(client):
     with client.application.app_context():
         user_id = User.query.filter_by(email="a@a.com").first().get_id()
 
-    # login request set the user_id in the session
-    # check that the user is loaded from the session
+    # check that the login request set the user_id in the session
     with client:
         client.get("/")
         assert session["_user_id"] == user_id
 
 def test_login_bad_email(client):
     """Test logging in with invalid email"""
-    response = client.post("/login", data={"email": "a@a.com", "password": "test1234"}, follow_redirects=True)
+    response = client.post("/login", data={"email": "bademail", "password": "12345678"}, follow_redirects=True)
     # check for flash message
     assert b"Invalid username or password" in response.data
 
 def test_login_bad_password(client):
     """Test logging in with invalid password"""
-    response = client.post("/login", data={"email": "a", "password": "12345678"}, follow_redirects=True)
+    response = client.post("/login", data={"email": "a@a.com", "password": "notthepassword"}, follow_redirects=True)
     # check for flash message
     assert b"Invalid username or password" in response.data
 
@@ -110,6 +109,7 @@ def test_allowing_dashboard_access(client):
 def test_logout(client):
     """Testing logging out"""
     client.post("/login", data={"email": "a@a.com", "password": "12345678"}, follow_redirects=True)
+    # check that the user_id in the session is removed
     with client:
         client.get("/logout")
         assert "_user_id" not in session
