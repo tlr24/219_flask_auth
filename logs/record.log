@@ -173,3 +173,11 @@
 2022-04-01 00:53:03,564 INFO werkzeug MainThread :  * Restarting with stat
 2022-04-01 00:59:51,423 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
 2022-04-01 00:59:51,608 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 01:29:08,286 INFO werkzeug MainThread :  * Detected change in '/home/myuser/app/auth/forms/__init__.py', reloading
+2022-04-01 01:29:08,359 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 01:29:15,101 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
+2022-04-01 01:29:15,183 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 01:42:37,570 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
+2022-04-01 01:42:37,645 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-01 01:48:33,030 INFO werkzeug MainThread :  * Detected change in '/home/myuser/tests/auth_test.py', reloading
+2022-04-01 01:48:33,113 INFO werkzeug MainThread :  * Restarting with stat

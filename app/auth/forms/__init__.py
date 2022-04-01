@@ -18,7 +18,7 @@ class login_form(FlaskForm):
 class register_form(FlaskForm):
     email = EmailField('Email Address', [
         validators.DataRequired(),
-
+        validators.Email()
     ], description="You need to signup with an email")
 
     password = PasswordField('Create Password', [
