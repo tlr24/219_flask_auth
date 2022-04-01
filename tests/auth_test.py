@@ -49,13 +49,13 @@ def test_successful_login(client):
 
 def test_login_bad_email(client):
     """Test logging in with invalid email"""
-    response = client.post("/login", data={"email": "a@a.com", "password": "test1234"}, follow_redirects=True)
+    response = client.post("/login", data={"email": "bademail", "password": "12345678"}, follow_redirects=True)
     # check for flash message
     assert b"Invalid username or password" in response.data
 
 def test_login_bad_password(client):
     """Test logging in with invalid password"""
-    response = client.post("/login", data={"email": "a", "password": "12345678"}, follow_redirects=True)
+    response = client.post("/login", data={"email": "a@a.com", "password": "notthepassword"}, follow_redirects=True)
     # check for flash message
     assert b"Invalid username or password" in response.data
 
