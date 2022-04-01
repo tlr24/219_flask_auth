@@ -60,10 +60,9 @@ def test_login_bad_password(client):
 
 def test_register_bad_email(client):
     """Test registering with a bad email"""
-    response = client.post("/register", data={"email": "", "password": "12345678", "confirm": "12345678"})
-    # check for status code to be 200 instead of 302, meaning it didn't redirect (didn't pass frontend validation)
+    response = client.post("/register", data={"email": "a", "password": "12345678", "confirm": "12345678"})
+    # check for status code to be 200 instead of 302, meaning it didn't redirect (didn't pass frontend validation email criteria)
     assert response.status_code == 200
-    # added 302 to register() redirects in auth/__init__.py to make sure we get the redirect status code with valid registrations
 
 def test_register_password_confirmation(client):
     """Test password confirmation by registering with mismatching passwords"""
