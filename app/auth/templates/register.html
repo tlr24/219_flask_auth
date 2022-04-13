@@ -9,23 +9,36 @@
             {{ render_form(form) }}
         </div>
         <div id="message" class="col-5">
-            <div id="letter">
+            <div id="lower">
                 Has lowercase letter
+                <div class="progress">
+                    <div id="p-bar" class="progress-bar" style="width: 0%" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                         aria-valuemax="100"></div>
+                </div>
             </div>
+            <!--<div id="upper">
+                Has uppercase letter
+            </div>-->
         </div>
     </div>
 
     <style>
-    .invalid {
-        color: red;
-    }
-    .valid {
-        color: green;
-    }
+        .invalid {
+            color: red;
+        }
+
+        .valid {
+            color: green;
+        }
     </style>
     <script>
         var passwordField = document.getElementById("password");
-        var letter = document.getElementById("letter");
+        var lower = document.getElementById("lower");
+        var upper = document.getElementById("upper");
+        var progress_bar = document.getElementById("p-bar");
+        var hasLowerCase = 0;
+
+        console.log(progress_bar);
 
         passwordField.onfocus = function () {
             var message = document.getElementById("message");
@@ -34,14 +47,29 @@
         }
 
         passwordField.onkeyup = function () {
-            // Validate lowercase letters
-            var lowerCaseLetters = /[a-z]/g;
-            if (passwordField.value.match(lowerCaseLetters)) {
-                letter.classList.remove("invalid");
-                letter.classList.add("valid");
+            let new_width_value;
+            if (hasLowerCase === 0) {
+                let p_bar_width_string = progress_bar.style.width;
+                let width_current_value = parseInt(p_bar_width_string.substring(0, p_bar_width_string.length - 1));
+                width_current_value = width_current_value + 33;
+                let width_string_new_value = width_current_value.toString();
+                new_width_value = width_string_new_value.concat("%");
             } else {
-                letter.classList.remove("valid");
-                letter.classList.add("invalid");
+                new_width_value = progress_bar.style.width;
+            }
+
+            // Validate lowercase letters
+            let lowerCaseLetters = /[a-z]/g;
+            if (passwordField.value.match(lowerCaseLetters)) {
+                lower.classList.remove("invalid");
+                lower.classList.add("valid");
+                progress_bar.style.width = new_width_value;
+                hasLowerCase = 1;
+            } else {
+                lower.classList.remove("valid");
+                lower.classList.add("invalid");
+                progress_bar.style.width = "0%";
+                hasLowerCase = 0;
             }
         }
     </script>
