@@ -261,3 +261,28 @@
 2022-04-13 17:06:31,630 INFO werkzeug Thread-3 : 172.19.0.1 - - [13/Apr/2022 17:06:31] "GET /register HTTP/1.1" 200 -
 2022-04-13 17:09:36,959 INFO werkzeug Thread-3 : 172.19.0.1 - - [13/Apr/2022 17:09:36] "GET /register HTTP/1.1" 200 -
 2022-04-13 17:10:21,142 INFO werkzeug Thread-3 : 172.19.0.1 - - [13/Apr/2022 17:10:21] "GET /register HTTP/1.1" 200 -
+2022-04-13 17:22:06,092 INFO werkzeug Thread-8 : 172.19.0.1 - - [13/Apr/2022 17:22:06] "GET /register HTTP/1.1" 200 -
+2022-04-14 16:28:24,656 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000 (Press CTRL+C to quit)
+2022-04-14 16:28:24,662 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-14 17:04:29,228 INFO werkzeug MainThread :  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.2:5000 (Press CTRL+C to quit)
+2022-04-14 17:04:29,232 INFO werkzeug MainThread :  * Restarting with stat
+2022-04-14 17:05:12,224 INFO werkzeug Thread-3 : 172.19.0.1 - - [14/Apr/2022 17:05:12] "GET / HTTP/1.1" 200 -
+2022-04-14 17:05:12,314 INFO werkzeug Thread-3 : 172.19.0.1 - - [14/Apr/2022 17:05:12] "GET / HTTP/1.1" 200 -
+2022-04-14 17:05:13,000 INFO werkzeug Thread-3 : 172.19.0.1 - - [14/Apr/2022 17:05:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2022-04-14 17:05:16,417 INFO werkzeug Thread-3 : 172.19.0.1 - - [14/Apr/2022 17:05:16] "GET /about HTTP/1.1" 200 -
+2022-04-14 17:05:17,373 INFO werkzeug Thread-3 : 172.19.0.1 - - [14/Apr/2022 17:05:17] "GET /welcome HTTP/1.1" 200 -
+2022-04-14 17:05:44,401 INFO werkzeug Thread-3 : 172.19.0.1 - - [14/Apr/2022 17:05:44] "GET /register HTTP/1.1" 200 -
+2022-04-14 17:13:39,945 INFO werkzeug Thread-6 : 172.19.0.1 - - [14/Apr/2022 17:13:39] "GET /register HTTP/1.1" 200 -
+2022-04-14 17:17:14,133 INFO werkzeug Thread-6 : 172.19.0.1 - - [14/Apr/2022 17:17:14] "GET /register HTTP/1.1" 200 -
+2022-04-14 17:17:45,903 INFO werkzeug Thread-6 : 172.19.0.1 - - [14/Apr/2022 17:17:45] "GET /register HTTP/1.1" 200 -
+2022-04-14 17:18:14,395 INFO werkzeug Thread-6 : 172.19.0.1 - - [14/Apr/2022 17:18:14] "GET /register HTTP/1.1" 200 -
+2022-04-14 17:18:34,639 INFO werkzeug Thread-6 : 172.19.0.1 - - [14/Apr/2022 17:18:34] "GET /register HTTP/1.1" 200 -
+2022-04-14 17:22:38,959 INFO werkzeug Thread-6 : 172.19.0.1 - - [14/Apr/2022 17:22:38] "GET /register HTTP/1.1" 200 -
+2022-04-14 17:26:22,525 INFO werkzeug Thread-6 : 172.19.0.1 - - [14/Apr/2022 17:26:22] "GET /register HTTP/1.1" 200 -
+2022-04-14 17:26:50,377 INFO werkzeug Thread-6 : 172.19.0.1 - - [14/Apr/2022 17:26:50] "GET /register HTTP/1.1" 200 -
